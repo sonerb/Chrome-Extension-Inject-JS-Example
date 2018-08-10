@@ -1,0 +1,24 @@
+{
+    "name": "Injector",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Inject JS",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "contentscript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}
